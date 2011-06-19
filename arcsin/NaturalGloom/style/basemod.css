@@ -383,15 +383,6 @@
     padding: 0 10px 0 0;
   }
 
-  .coolsubcol ul {
-    margin: 0;
-  }
-  .coolsubcol li {
-    border-bottom: 1px solid #BABEBF;
-    list-style: none;
-    padding: 5px 0;
-  }
-
 
 
   /**
@@ -423,7 +414,7 @@
   }
   .bt_2col #col2_content,
   .bt_2col #col3_content {
-    padding: 0 18px;
+    padding: 10px 18px 0;
   }
 
 
@@ -469,14 +460,18 @@
 
   /* Zikula Blocks */
   .z-block {
-    margin-bottom: 15px;
+    margin-bottom: 0.6em;
   }
   .z-block .z-block-title {
     margin: 0;
-    padding: 3px 4px;
+    padding: 3px 0;
+  }
+  #col2 .z-block .z-block-title,
+  #col3 .z-block .z-block-title {
+    padding: 7px 10px 6px;
   }
   .z-block .z-block-content {
-    padding: 5px;
+    padding: 10px 5px;
   }
   .z-block ul,
   .z-block ol,
