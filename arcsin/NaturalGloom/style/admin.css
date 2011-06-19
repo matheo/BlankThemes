@@ -17,12 +17,16 @@ body.bt_admin {
 
 .bt_admin #header {
   height: 70px;
+  padding: 0 20px;
 }
 .bt_admin #header h1 {
   padding: 10px 0 0;
 }
 .bt_admin #header .logo {
   margin: 10px 5px 0 0;
+}
+.bt_admin #header .slogan {
+  margin: 0;
 }
 
 .bt_admin.bt_2col .bt_12 #col1 {

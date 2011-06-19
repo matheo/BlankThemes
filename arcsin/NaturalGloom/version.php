@@ -18,7 +18,6 @@ $themeversion['version']        = '1.3';
 
 $themeversion['author']         = 'Mateo Tibaquirá, Viktor Persson';
 $themeversion['contact']        = 'http://www.blanktheme.org, http://arcsin.se/';
-$themeversion['official']       = '0';
 $themeversion['admin']          = 1;
 $themeversion['user']           = 1;
 $themeversion['system']         = 0;
