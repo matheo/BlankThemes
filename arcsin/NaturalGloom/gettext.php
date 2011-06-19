@@ -14,8 +14,6 @@ no__('no');
 
 no__('Master body template');
 no__('2 columns');
-no__('3 columns');
-no__('3 columns static');
 no__('grid');
 
 no__('Master layout');
