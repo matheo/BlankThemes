@@ -32,6 +32,8 @@
     <a href="http://community.zikula.org/" title="{gt text='Powered by Zikula'}">Zikula</a>
     <span class="text_separator">|</span>
     <a href="http://www.yaml.de/" title="{gt text='Layout supported by YAML'}">YAML</a>
+    <span class="text_separator">|</span>
+    <a href="http://arcsin.se/" title="{gt text='Website template by Arcsin'}">Arcsin</a>
     {if $serviceManager.development}
         {* displays validators links only on development mode *}
         <span class="text_separator">|</span>
