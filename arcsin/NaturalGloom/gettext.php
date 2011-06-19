@@ -17,8 +17,6 @@ no__('2 columns');
 no__('3 columns');
 no__('3 columns static');
 no__('grid');
-no__('full width');
-no__('full height');
 
 no__('Master layout');
 
@@ -37,5 +35,3 @@ no__("Enable 'footer' block position?");
 no__('Enable font resize buttons');
 
 no__('Enable optimized mode');
-
-no__('Full height body required CSS class');
