@@ -159,13 +159,38 @@
 
       /* content wrapper */
       #main {
-        background: url('../images/design/bg_main.gif') repeat-y;
         border-bottom: 1px solid #C3C4C1;
         margin-bottom: 3px;
       }
         #main_inner {
-          background: url('../images/design/bg_main_top.gif') no-repeat;
           padding: 10px 0;
+        }
+
+      .bt_2col .bt_12 #main,
+      .bt_2col .bt_13 #main {
+        background: url('../images/design/bg_main_1x.gif') repeat-y;
+      }
+        .bt_2col .bt_12 #main_inner,
+        .bt_2col .bt_13 #main_inner {
+          background: url('../images/design/bg_main_1xtop.gif') no-repeat;
+        }
+
+      .bt_2col .bt_21 #main,
+      .bt_2col .bt_31 #main {
+        background: url('../images/design/bg_main_x1.gif') repeat-y;
+      }
+        .bt_2col .bt_21 #main_inner,
+        .bt_2col .bt_31 #main_inner {
+          background: url('../images/design/bg_main_x1top.gif') no-repeat;
+        }
+
+      .bt_2col .bt_1 #main,
+      .bt_2col .bt_1 #main {
+        background: url('../images/design/bg_main_1.gif') repeat-y;
+      }
+        .bt_2col .bt_1 #main_inner,
+        .bt_2col .bt_1 #main_inner {
+          background: url('../images/design/bg_main_1top.gif') no-repeat;
         }
 
       /* footer */
@@ -429,9 +454,10 @@
   /* 1 layout */
   /* full main column */
   .bt_2col .bt_1 #col1 {
-    width: 100%;
+    float: none;
     margin-left: 0;
     margin-right: 0;
+    width: 100%;
   }
 
 
