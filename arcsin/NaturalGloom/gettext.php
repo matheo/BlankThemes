@@ -14,7 +14,6 @@ no__('no');
 
 no__('Master body template');
 no__('2 columns');
-no__('grid');
 
 no__('Master layout');
 

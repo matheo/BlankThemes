@@ -17,12 +17,4 @@ body template to support 2 and 1 column layouts
   using the [centerbl] and [centerbr] block positions.
 * Supported distributions: '21', '12', '31', '13' and also '1' to only have the main column
 
-## grid
-
-Uses the YAML subtemplates like the flexible grids example to build the layout
-
-* Is able to switch the side columns with the distributions: '123', '132', '12', '13'
-* Also supports the '3b' zone (3subcolumns-at-bottom)
-  and uses the [bottoml]. [bottomc] and [bottomr] block positions
-
 All of them also supports the additional zone 'nc' (no-center) to disable the [center] blocks
