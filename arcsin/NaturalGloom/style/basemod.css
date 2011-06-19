@@ -87,8 +87,7 @@
 
   /* marginal area */
   body {
-    background: #4d87c7 url(../images/design/bg_blue.gif) repeat-x top left fixed;
-    padding: 10px 0; /* to-remove */
+    background: #797E84 url('../images/design/bg_body.jpg');
   }
 
   /* skiplinks */
@@ -101,25 +100,36 @@
     text-decoration: none;
   }
 
-  /* general wrapper */
+  /* general wrappers */
+  #ngtheme_wrapper1 {
+    background: url('../images/design/bg_layout_wrapper1.jpg') repeat-x;
+    padding-bottom: 16px;
+  }
+
+  #ngtheme_wrapper2 {
+    background: url('../images/design/bg_layout_wrapper2.jpg') no-repeat center top;
+    padding-top: 90px;
+  }
+
   .page_margins {
     margin: 0 auto;
 
-    width: 980px;
-    min-width: 980px;
+    width: 992px;
+    min-width: 992px;
     max-width: 80em;
   }
 
   /* page wrapper */
   .page {
     background: #fff;
-    border: 10px #fff solid; /* to-remove : add the 20px to the fixed-width columns */
+    border: 6px #fff solid;
   }
 
       /* header */
       #header {
-        height: 110px;
-        padding: 0 20px; /* do not use top/bottom paddings with fixed height */
+        background: #222 url('../images/design/bg_header.jpg') repeat-x;
+        height: 150px;
+        padding: 0 48px; /* do not use top/bottom paddings with fixed height */
         position: relative;
         /*z-index: 100;*/ /* when the navigation is placed inside the header and a multi level menu is used this is needed for ie */
       }
@@ -134,28 +144,35 @@
 
           /* title and slogan */
           #header h1 {
-            padding: 37px 0 0 0;
+            padding: 50px 0 0 0;
           }
           #header .slogan {
             float: left;
+            margin-top: 5px;
           }
 
           /* logo */
           #header .logo {
             float: left;
-            margin: 30px 12px 0 0;
+            margin: 45px 12px 0 0;
           }
 
       /* content wrapper */
       #main {
-        padding: 1em 0;
+        background: url('../images/design/bg_main.gif') repeat-y;
+        border-bottom: 1px solid #C3C4C1;
+        margin-bottom: 3px;
       }
+        #main_inner {
+          background: url('../images/design/bg_main_top.gif') no-repeat;
+          padding: 10px 0;
+        }
 
       /* footer */
       #footer {
-        background: #efefef;
-        border-top: 5px #dfdfdf solid; /* to-remove */
-        padding: 12px 15px;
+        background: #ddd;
+        border-top: 1px solid #ccc;
+        padding: 8px 12px;
       }
         #footer #footer_sublinks {
           margin: 0.4em 0 0;
@@ -180,7 +197,7 @@
   }
 
   #bt_topnavlinks li {
-    border-right: 1px solid #ddd;
+    border-right: 1px solid #999;
     float: left;
     margin: 0;
     padding: 0;
@@ -203,16 +220,21 @@
 
 
   /* navigation bar */
-  #nav_main {
-    background: #ccc url(../yaml/navigation/images/shiny_buttons/background.png) repeat-x; /* to-remove */
+  #nav {
+    background: #6E7D85 url('../images/design/bg_navigation.gif') repeat-x;
+    margin-bottom: 3px;
+    padding-top: 4px;
+  }
+  #nav_main,
+  #nav_sub {
     border: none;
-    display: inline;
+    display: table;
     float: left;
     overflow: visible;
     width: 100%;
   }
 
-  #nav_main ul {
+  #nav ul {
     border: none;
     display: inline;
     float: left;
@@ -221,9 +243,9 @@
     padding: 0;
   }
 
-  #nav_main ul li {
+  #nav ul li {
     border: none;
-    border-right: 1px solid #aaa; /* to-remove */
+    border-right: 1px solid #54646C;
     display: inline;
     float: left;
     list-style-type: none;
@@ -231,14 +253,14 @@
     padding: 0;
   }
 
-  #nav_main ul li a,
-  #nav_main ul li strong {
+  #nav ul li a,
+  #nav ul li strong {
     background: transparent;
-    color: #333;
+    color: #E0E6EA;
     display: block;
     font-size: 14px;
     font-weight: bold;
-    line-height: 30px;
+    line-height: 32px;
     margin: 0;
     padding: 0 16px;
     text-decoration: none;
@@ -254,12 +276,12 @@
       padding-bottom: 6px;
     }
 
-  #nav_main ul li a:focus,
-  #nav_main ul li a:hover,
-  #nav_main ul li a:active {
-    background: #3b69ad;
+  #nav ul li a:focus,
+  #nav ul li a:hover,
+  #nav ul li a:active {
+    background: #5E6D75;
     border: none;
-    color: #fff;
+    color: #F0F6FA;
     text-decoration: none;
   }
     #nav_main ul li a:focus span.bt_desc,
@@ -269,7 +291,7 @@
     }
 
   #nav_main ul li.current {
-    background: #4d87c7;
+    background: #6E7D85;
     border: none; /* to-remove */
   }
     #nav_main ul li.current a span.bt_desc {
@@ -284,6 +306,23 @@
     background: transparent;
     color: #fff;
     font-weight: bold;
+  }
+
+  #nav_sub {
+    border-top: 1px solid #555A5F;
+    background: #60656A;
+  }
+  #nav #nav_sub ul li {
+    border-right: 1px solid #50555A;
+  }
+  #nav #nav_sub ul li a {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 28px;
+    padding: 0 12px;
+  }
+  #nav #nav_sub ul li a:hover {
+    background: #555A5F;
   }
 
 
@@ -301,19 +340,31 @@
 
   /* cool subcolumns style */
   .coolsubcol {
-    background: #f9f9f9;
-    border-top: 2px #efefef solid;
-    color: #666;
-    padding-top: 15px;
+    background: #C9CDCF url('../images/design/bg_dashboard.gif') repeat-x;
+    border: 1px solid #ACAFB0;
+    color: #404448;
+    margin-bottom: 3px;
+    padding: 15px;
   }
   .coolsubcol .subcl {
     padding: 0 0 0 10px;
   }
   .coolsubcol .subc {
+    border-left: 1px solid #B0B4B8;
+    border-right: 1px solid #B0B4B8;
     padding: 0 5px 0 5px;
   }
   .coolsubcol .subcr {
     padding: 0 10px 0 0;
+  }
+
+  .coolsubcol ul {
+    margin: 0;
+  }
+  .coolsubcol li {
+    border-bottom: 1px solid #BABEBF;
+    list-style: none;
+    padding: 5px 0;
   }
 
 
@@ -333,10 +384,10 @@
   /* #col1 is the main column */
   .bt_2col #col1 {
     float: right;
-    width: 75%;
+    width: 690px;
   }
   .bt_2col #col1_content {
-    padding: 0 15px 0 10px;
+    padding: 0 20px;
   }
 
   /* #col2 and #col3 contains side blocks */
@@ -347,7 +398,7 @@
   }
   .bt_2col #col2_content,
   .bt_2col #col3_content {
-    padding: 0 10px 0 15px;
+    padding: 0 18px;
   }
 
 
@@ -358,31 +409,20 @@
   }
   .bt_2col .bt_12 #col2,
   .bt_2col .bt_13 #col3 {
-    border-left: 1px solid #DDDDDD; /* to-remove */
-    margin-left: 75%;
+    margin-left: 690px;
     margin-right: 0;
-  }
-  /* padding changes */
-  .bt_2col .bt_12 #col1_content,
-  .bt_2col .bt_13 #col1_content {
-    padding: 0 10px 0 15px;
-  }
-  .bt_2col .bt_12 #col2_content,
-  .bt_2col .bt_13 #col3_content {
-    padding: 0 15px 0 10px;
   }
 
 
   /* X1 layouts */
   .bt_2col .bt_21 #col1,
   .bt_2col .bt_31 #col1 {
-    margin-left: -5px;
+    /*margin-left: -5px; Not needed for fixed widths */
   }
   .bt_2col .bt_21 #col2,
   .bt_2col .bt_31 #col3 {
-    border-right: 1px solid #DDDDDD; /* to-remove */
     margin-left: 0;
-    margin-right: 75%;
+    margin-right: 690px;
   }
 
 
@@ -393,9 +433,6 @@
     width: 100%;
     margin-left: 0;
     margin-right: 0;
-  }
-  .bt_2col .bt_1 #col1_content {
-    padding: 0 10px;
   }
 
 
@@ -410,7 +447,7 @@
   .bt_3col #col1 {
     float: left;
     margin: 0;
-    width: 520px;
+    width: 528px;
   }
   .bt_3col #col1_content {
     padding: 0 10px;
@@ -442,7 +479,7 @@
     margin-left: 220px; /* col2 width */
   }
   .bt_3col .bt_213 #col2 {
-    margin-left: -740px; /* col1 + col2 widths */
+    margin-left: -748px; /* col1 + col2 widths */
   }
   .bt_3col .bt_213 #col3 {
     /*margin-left: -5px; Not needed for fixed widths */
@@ -455,11 +492,11 @@
   }
   .bt_3col .bt_312 #col2 {
     float: right;
-    margin-left: -5px;
+    /*margin-left: -5px; Not needed for fixed widths */
   }
   .bt_3col .bt_312 #col3 {
     float: left;
-    margin-left: -740px; /* col1 + col2 widths */
+    margin-left: -748px; /* col1 + col2 widths */
   }
 
 

@@ -5,8 +5,8 @@
     <li><a class="skip" href="#col1">{gt text='Skip to main content'} {gt text='(Press Enter)'}.</a></li>
 </ul>
 
-<div id="theme_wrapper1">
-<div id="theme_wrapper2">
+<div id="ngtheme_wrapper1">
+<div id="ngtheme_wrapper2">
 <div class="page_margins {bt_htmloutput section='classespage'}">
     <div class="page {bt_htmloutput section='classesinnerpage'}">
 
@@ -26,7 +26,7 @@
         <!-- end: #header -->
 
         <!-- begin: main navigation #nav -->
-        <div id="nav">
+        <div id="nav" class="floatbox">
             {if $btconfig.topnav eq 1}
                 {blockposition name='topnav'}
             {else}
@@ -37,6 +37,7 @@
 
         <!-- begin: main content area #main -->
         <div id="main">
+            <div id="main_inner">
             <!-- begin: #col1 - main column -->
             <div id="col1">
                 <div id="col1_content" class="clearfix">
@@ -86,6 +87,7 @@
             </div>
             <!-- end: #col3 -->
             {/if}
+            </div>
         </div>
         <!-- end: #main -->
 

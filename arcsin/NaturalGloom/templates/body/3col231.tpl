@@ -5,6 +5,8 @@
     <li><a class="skip" href="#col1">{gt text='Skip to main content'} {gt text='(Press Enter)'}.</a></li>
 </ul>
 
+<div id="ngtheme_wrapper1">
+<div id="ngtheme_wrapper2">
 <div class="page_margins {bt_htmloutput section='classespage'}">
     <div class="page {bt_htmloutput section='classesinnerpage'}">
 
@@ -89,4 +91,6 @@
         </div>
         <!-- end: #footer -->
     </div>
+</div>
+</div>
 </div>

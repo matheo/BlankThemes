@@ -28,7 +28,8 @@
  */
 function smarty_function_bt_userlinks($params, Zikula_View_Theme &$view)
 {
-    $id = isset($params['id']) ? $params['id'] : 'nav_main';
+    $id    = isset($params['id']) ? $params['id'] : 'nav_main';
+    $subid = isset($params['subid']) ? $params['subid'] : 'nav_sub';
 
     $currentclass = isset($params['currentclass']) ? $params['currentclass'] : 'current';
 
@@ -138,6 +139,31 @@ function smarty_function_bt_userlinks($params, Zikula_View_Theme &$view)
         $output .= bt_userlinks_drawmenu($option, $current, $currentclass, $span, $desc);
     }
     $output .= '</ul></div>';
+
+
+    /*** Build the submenu-array ***/
+    $menu = array();
+    $menu['home'][] = array(
+                          '',
+                          __('Home sublink', $dom),
+                          '',
+                          '#'
+                      );
+    $menu['home'][] = array(
+                          '',
+                          __('Home second sublink', $dom),
+                          '',
+                          '#'
+                      );
+
+    // Render the submenu id it's set
+    if (isset($menu[$current])) {
+        $output .= '<div id="'.$subid.'"><ul>';
+        foreach ($menu[$current] as $option) {
+            $output .= bt_userlinks_drawmenu($option, $current, $currentclass, $span, $desc);
+        }
+        $output .= '</ul></div>';
+    }
 
     return $output;
 }

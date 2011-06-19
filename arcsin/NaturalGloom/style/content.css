@@ -54,35 +54,37 @@
   /* base layout gets standard */
   body {
     color: #444;
-    font-family: Verdana, Arial, sans-serif;
+    font-family: /*Verdana, Arial,*/ sans-serif;
     font-size: 75.00%; /* font size 12px */
   }
 
   h1, h2, h3, h4, h5, h6 {
-    color: #222;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #555;
+    /*font-family: Georgia, 'Times New Roman', Times, serif;*/
     font-weight: normal;
     margin: 0 0 0.25em 0;
   }
+  h4, h5, h6 {
+    font-weight: bold;
+  }
 
   h1 {
-    font-size: 250%; /* 30px */
+    font-size: 2.6em;
   }
   h2 {
-    color: #182E7A;
-    font-size: 200%; /* 24px */
+    font-size: 2em;
   }
   h3 {
-    font-size: 166.66%; /* 20px */
+    font-size: 1.5em;
   }
   h4 {
-    font-size: 150%; /* 18px */
+    font-size: 1.25em;
   }
   h5 {
-    font-size: 133.33%; /* 16px */
+    font-size: 1.1em;
   }
   h6 {
-    font-size: 116.67%; /* 14px */
+    font-size: 1em;
     font-style: italic;
   }
 
@@ -136,6 +138,9 @@
     color: #666;
     margin: 0 0 1em 1.6em;
   }
+  del {
+    color: #666;
+  }
 
   strong, b {
     font-weight: bold;
@@ -147,6 +152,7 @@
   pre {
     line-height: 1.5em;
     margin: 0 0 1em 0;
+    white-space: pre;
   }
   pre, code, kbd, tt, samp, var {
     font-size: 100%;
@@ -154,6 +160,11 @@
   pre, code {
     color: #800;
   }
+  pre, code, tt {
+    font-family: monospace;
+    line-height: 1.5;
+  }
+
   kbd, samp, var {
     color: #666;
     font-weight: bold;
@@ -163,13 +174,13 @@
   }
 
   acronym, abbr {
-    border-bottom: 1px #aaa dotted;
+    border-bottom: 1px dotted #666;
     cursor: help;
     font-variant: small-caps;
     letter-spacing: .07em;
   }
 
-  sub{
+  sub {
     font-size: smaller;
     vertical-align: sub;
   }
@@ -241,8 +252,8 @@
   /* general links */
   a {
     background: transparent;
-    color: #4D87C7;
-    text-decoration: none;
+    color: #357;
+    text-decoration: underline;
   }
   a:visited {
     color: #036;
@@ -255,7 +266,7 @@
   a:active {
     /* if you use backgrounds or borders here
        you will interfere zikula core styles */
-    color: #182E7A;
+    color: #000;
     outline: 0 none;
     text-decoration: underline;
   }
@@ -275,24 +286,30 @@
   }
 
   /* title link */
+  #header h1 a {
+    color: #A0C3D0;
+    text-decoration: none;
+  }
+
   #header h1 a:focus,
   #header h1 a:hover,
   #header h1 a:active {
     background: transparent;
+    color: #ddd;
     text-decoration: none;
   }
 
   /* footer links */
   #footer a {
     background: transparent;
-    color: #999;
-    font-weight: bold;
+    color: #777;
+    text-decoration: none;
   }
   #footer a:focus,
   #footer a:hover,
   #footer a:active {
     background: transparent;
-    color: #4D87C7;
+    color: #223;
     text-decoration: underline;
   }
     #footer_sublinks a {
@@ -309,7 +326,7 @@
    */
 
   #header h1 {
-    color: #000;
+    color: #A0C3D0;
     font-size: 36px;
     letter-spacing: -1px;
     line-height: 65%;
@@ -328,7 +345,7 @@
     }
 
   #footer {
-    color: #666;
+    color: #777;
     font-size: 12px;
     line-height: 150%;
     text-align: left;
@@ -336,6 +353,19 @@
     #footer #footer_sublinks {
       font-size: 0.8em;
     }
+
+  .coolsubcol h4 {
+    color: #606669;
+    font-size: 1.5em;
+  }
+  .coolsubcol li a {
+    color: #404448;
+    text-decoration: none;
+  }
+  .coolsubcol li a:hover {
+    color: #202428;
+    text-decoration: underline;
+  }
 
 
 
@@ -371,6 +401,7 @@
     /*width: auto;*/
   }
   table caption {
+    background: #eee;
     font-variant: small-caps;
   }
   table.full,
@@ -381,7 +412,11 @@
     table-layout: fixed;
   }
 
+  table tr.z-odd {
+    background: #F2F6FA;
+  }
   thead th {
+    background: #C3D9FF;
     color: #000;
   }
   tbody th {
@@ -518,6 +553,17 @@
   }
   .fontresize-small {
     background: url(../images/icons/font_resize.gif) no-repeat -40px 50%;
+  }
+
+  /* tabbed lists */
+  ul.tabbed {
+    display: inline;
+    margin: 0;
+  }
+  ul.tabbed li {
+    float: left;
+    list-style: none;
+    margin: 0;
   }
 
   /* Special styles for entries or menus ... */
