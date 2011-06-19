@@ -42,7 +42,7 @@ function smarty_function_bt_adminlinks($params, Zikula_View_Theme &$view)
         $currentclass = 'selected';
     }
 
-    $dom = ZLanguage::getThemeDomain('BlankTheme');
+    $dom = ZLanguage::getThemeDomain('SimpleOrganization');
 
     /*** Build the menu-array ***/
     /* Option format: id, lang_constant, link, array_sublinks */

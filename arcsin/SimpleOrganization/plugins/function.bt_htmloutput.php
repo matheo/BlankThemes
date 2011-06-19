@@ -29,7 +29,7 @@ function smarty_function_bt_htmloutput($params, Zikula_View_Theme &$view)
         return '';
     }
 
-    $dom = ZLanguage::getThemeDomain('BlankTheme');
+    $dom = ZLanguage::getThemeDomain('SimpleOrganization');
 
     // blanktheme vars
     $body      = $view->getTplVar('body');

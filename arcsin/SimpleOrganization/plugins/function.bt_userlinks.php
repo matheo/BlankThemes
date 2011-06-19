@@ -41,7 +41,7 @@ function smarty_function_bt_userlinks($params, Zikula_View_Theme &$view)
     $span = isset($params['span']) ? (bool)$params['span'] : false;
     $desc = isset($params['desc']) ? (bool)$params['desc'] : false;
 
-    $dom = ZLanguage::getThemeDomain('BlankTheme');
+    $dom = ZLanguage::getThemeDomain('SimpleOrganization');
 
     /*** Build the menu-array ***/
     $menu   = array();

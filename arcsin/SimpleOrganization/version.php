@@ -9,16 +9,15 @@
  */
 
 
-$dom = ZLanguage::getThemeDomain('BlankTheme');
+$dom = ZLanguage::getThemeDomain('SimpleOrganization');
 
-$themeversion['name']           = 'BlankTheme';
-$themeversion['displayname']    = __('BlankTheme', $dom);
-$themeversion['description']    = __('Theme development framework for Zikula', $dom);
+$themeversion['name']           = 'SimpleOrganization';
+$themeversion['displayname']    = __('Simple Organization', $dom);
+$themeversion['description']    = __('Free XHTML and CSS website template by Arcsin', $dom);
 $themeversion['version']        = '1.3';
 
-$themeversion['author']         = 'BlankTheme Team';
-$themeversion['contact']        = 'http://www.blanktheme.org';
-$themeversion['official']       = '0';
+$themeversion['author']         = 'Mateo Tibaquirá, Viktor Persson';
+$themeversion['contact']        = 'http://www.blanktheme.org, http://arcsin.se/';
 $themeversion['admin']          = 1;
 $themeversion['user']           = 1;
 $themeversion['system']         = 0;
