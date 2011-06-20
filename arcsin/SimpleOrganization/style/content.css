@@ -584,7 +584,8 @@
   ul.plain-list {
     margin: 0;
   }
-  ul.nice-list {
+  ul.nice-list,
+  .nice-list ul {
     margin-left: 0;
   }
   ul.tabbed {
@@ -594,30 +595,34 @@
 
   ul.plain-list li,
   ul.nice-list li,
+  .nice-list ul li,
   ul.tabbed li {
     list-style: none;
-    margin-top: 0;
+    margin: 0;
   }
 
-  ul.nice-list li {
+  ul.nice-list li,
+  .nice-list ul li {
     border-top: 1px solid #EEE;
     list-style: none;
     padding: 4px 0;
   }
-  ul.nice-list li:first-child {
+  ul.nice-list li:first-child,
+  .nice-list ul li:first-child {
     border-top: none;
   }
-  ul.nice-list li .z-floatright {
+  ul.nice-list li .z-floatright,
+  .nice-list ul li .z-floatright {
     color: #999;
   }
   ul.tabbed li {
     float: left;
   }
 
-  /* Special styles for entries or menus ... */
+  /* Special styles for entries or comments ... */
   .post {
   }
-  .menu {
+  .comment {
   }
 
 
