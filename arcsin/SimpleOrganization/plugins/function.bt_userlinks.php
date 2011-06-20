@@ -29,7 +29,8 @@
 function smarty_function_bt_userlinks($params, Zikula_View_Theme &$view)
 {
     $id = isset($params['id']) ? $params['id'] : null;
-
+    $span = isset($params['span']) ? (bool)$params['span'] : false;
+    $desc = isset($params['desc']) ? (bool)$params['desc'] : false;
     $currentclass = isset($params['currentclass']) ? $params['currentclass'] : 'current';
 
     if (!isset($params['current'])) {
@@ -37,9 +38,6 @@ function smarty_function_bt_userlinks($params, Zikula_View_Theme &$view)
     } else {
         $current = $params['current'];
     }
-
-    $span = isset($params['span']) ? (bool)$params['span'] : false;
-    $desc = isset($params['desc']) ? (bool)$params['desc'] : false;
 
     $dom = ZLanguage::getThemeDomain('SimpleOrganization');
 
@@ -133,11 +131,11 @@ function smarty_function_bt_userlinks($params, Zikula_View_Theme &$view)
     }
 
     // Render the menu as an unordered list in a div
-    $output  = $id ? '<div id="'.$id.'" class="floatbox"><div id="'.$id.'_sub"><ul>' : '<ul>';
+    $output  = '<ul>';
     foreach ($menu as $option) {
         $output .= bt_userlinks_drawmenu($option, $current, $currentclass, $span, $desc);
     }
-    $output .= $id ? '</ul></div></div>' : '</ul>';
+    $output .= '</ul>';
 
     return $output;
 }

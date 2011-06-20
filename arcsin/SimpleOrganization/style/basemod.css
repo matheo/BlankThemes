@@ -162,7 +162,7 @@
         padding: 12px 5px;
       }
         #footer p {
-          line-height: 24px;
+          line-height: 20px;
           margin: 0;
         }
 
@@ -305,8 +305,14 @@
   #nav_sub ul li a {
     font-size: 1.2em;
     line-height: 1.2em;
+    margin: 0 0.7em;
     padding: 0;
     text-decoration: none;
+  }
+  #nav_sub ul li a:focus,
+  #nav_sub ul li a:hover,
+  #nav_sub ul li a:active {
+    color: #002;
   }
   #nav_sub ul li.current a,
   #nav_sub ul li.current a:focus,

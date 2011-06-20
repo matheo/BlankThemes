@@ -34,7 +34,7 @@
         <!-- end: #header -->
 
         <!-- begin: main navigation #nav -->
-        {bt_userlinks id="nav" navsub=1}
+        {bt_usersublinks}
         <!-- end: main navigation -->
 
         <!-- begin: main content area #main -->
