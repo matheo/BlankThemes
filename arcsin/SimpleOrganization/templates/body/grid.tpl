@@ -21,7 +21,7 @@
             <h1><a href="{$baseurl}" title="{gt text='Go to the homepage'}">{$modvars.ZConfig.sitename}</a></h1>
             <span class="slogan">{$modvars.ZConfig.slogan}</span>
 
-            <!-- begin: #nav -->
+            <!-- begin: #nav_main -->
             <div id="nav_main">
                 {if $btconfig.topnav eq 1}
                     {blockposition name='topnav'}
@@ -29,13 +29,13 @@
                     {bt_userlinks}
                 {/if}
             </div>
-            <!-- end: #nav -->
+            <!-- end: #nav_main -->
         </div>
         <!-- end: #header -->
 
-        <!-- begin: main navigation #nav -->
+        <!-- begin: #nav -->
         {bt_usersublinks}
-        <!-- end: main navigation -->
+        <!-- end: #nav -->
 
         <!-- begin: main content area #main -->
         <div id="main">

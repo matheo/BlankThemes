@@ -9,7 +9,7 @@
     <div class="page {bt_htmloutput section='classesinnerpage'}">
 
         <!-- begin: #header -->
-        <div id="header" class="floatbox">
+        <div id="header" class="clearfix">
             <div id="topnav">
                 {bt_htmloutput section='topnavlinks'}
                 {bt_htmloutput section='fontresize'}
@@ -20,22 +20,26 @@
             <a href="{$baseurl}">{img src='logo.png' class='logo' __alt='logo'}</a>
             <h1><a href="{$baseurl}" title="{gt text='Go to the homepage'}">{$modvars.ZConfig.sitename}</a></h1>
             <span class="slogan">{$modvars.ZConfig.slogan}</span>
+
+            <!-- begin: #nav_main -->
+            <div id="nav_main">
+                {if $btconfig.topnav eq 1}
+                    {blockposition name='topnav'}
+                {else}
+                    {bt_userlinks}
+                {/if}
+            </div>
+            <!-- end: #nav_main -->
         </div>
         <!-- end: #header -->
 
-        <!-- begin: main navigation #nav -->
-        <div id="nav">
-            {if $btconfig.topnav eq 1}
-                {blockposition name='topnav'}
-            {else}
-                {bt_userlinks}
-            {/if}
-        </div>
-        <!-- end: main navigation -->
+        <!-- begin: #nav -->
+        {bt_usersublinks}
+        <!-- end: #nav -->
 
-        <!-- begin: main content area #main -->
+        <!-- begin: #main -->
         <div id="main">
-            <!-- begin: #col1 - main column -->
+            <!-- begin: #col1 main column -->
             <div id="col1">
                 <div id="col1_content" class="clearfix">
                     {if $layout|checkzone:nc ne true}
