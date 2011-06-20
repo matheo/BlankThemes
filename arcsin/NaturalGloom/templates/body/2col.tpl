@@ -25,7 +25,7 @@
         </div>
         <!-- end: #header -->
 
-        <!-- begin: main navigation #nav -->
+        <!-- begin: #nav -->
         <div id="nav" class="floatbox">
             {if $btconfig.topnav eq 1}
                 {blockposition name='topnav'}
@@ -33,12 +33,12 @@
                 {bt_userlinks}
             {/if}
         </div>
-        <!-- end: main navigation -->
+        <!-- end: #nav -->
 
-        <!-- begin: main content area #main -->
+        <!-- begin: #main -->
         <div id="main">
             <div id="main_inner">
-            <!-- begin: #col1 - main column -->
+            <!-- begin: #col1 main column -->
             <div id="col1">
                 <div id="col1_content" class="clearfix">
                     {if $layout|checkzone:nc ne true}
