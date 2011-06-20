@@ -186,7 +186,7 @@
   }
   sup {
     font-size: smaller;
-    vertical-align: sup;
+    vertical-align: super;
   }
 
   hr {
@@ -579,6 +579,48 @@
     margin: 0;
   }
 
+  /* Default menu/menutree block lists styles */
+  #col2 .z-block ul.navlist,
+  #col3 .z-block ul.navlist,
+  #col2 .z-block ul.menutree,
+  #col3 .z-block ul.menutree,
+  .bt-menublock ul {
+    margin: 0;
+  }
+  #col2 .z-block ul.navlist li,
+  #col3 .z-block ul.navlist li,
+  #col2 .z-block ul.menutree li,
+  #col3 .z-block ul.menutree li,
+  .bt-menublock ul li {
+    border-bottom: 1px solid #babebf;
+    list-style: none;
+    margin: 0;
+    padding: 5px 0;
+  }
+  #col2 .z-block ul.navlist li:last-child,
+  #col3 .z-block ul.navlist li:last-child,
+  #col2 .z-block ul.menutree li:last-child,
+  #col3 .z-block ul.menutree li:last-child,
+  .bt-menublock ul li:last-child {
+    border-bottom: none;
+  }
+  #col2 .z-block ul.navlist li a,
+  #col3 .z-block ul.navlist li a,
+  #col2 .z-block ul.menutree li a,
+  #col3 .z-block ul.menutree li a,
+  .bt-menublock ul li a {
+    color: #404448;
+    text-decoration: none;
+  }
+  #col2 .z-block ul.navlist li a:hover,
+  #col3 .z-block ul.navlist li a:hover,
+  #col2 .z-block ul.menutree li a:hover,
+  #col3 .z-block ul.menutree li a:hover,
+  .bt-menublock ul li a:hover {
+    color: #202428;
+    text-decoration: underline;
+  }
+
   /* Special styles for entries or menus ... */
   .post {
   }
@@ -713,42 +755,5 @@
   /* Ratings hook */
   #ratingsratecontent p {
     margin: 0;
-  }
-
-  /* Block menu lists */
-  #col2 .z-block ul.navlist,
-  #col3 .z-block ul.navlist,
-  #col2 .z-block ul.menutree,
-  #col3 .z-block ul.menutree {
-    margin: 0;
-  }
-  #col2 .z-block ul.navlist li,
-  #col3 .z-block ul.navlist li,
-  #col2 .z-block ul.menutree li,
-  #col3 .z-block ul.menutree li {
-    border-bottom: 1px solid #babebf;
-    list-style: none;
-    margin: 0;
-    padding: 5px 0;
-  }
-  #col2 .z-block ul.navlist li:last-child,
-  #col3 .z-block ul.navlist li:last-child,
-  #col2 .z-block ul.menutree li:last-child,
-  #col3 .z-block ul.menutree li:last-child {
-    border-bottom: none;
-  }
-  #col2 .z-block ul.navlist li a,
-  #col3 .z-block ul.navlist li a,
-  #col2 .z-block ul.menutree li a,
-  #col3 .z-block ul.menutree li a {
-    color: #404448;
-    text-decoration: none;
-  }
-  #col2 .z-block ul.navlist li a:hover,
-  #col3 .z-block ul.navlist li a:hover,
-  #col2 .z-block ul.menutree li a:hover,
-  #col3 .z-block ul.menutree li a:hover {
-    color: #202428;
-    text-decoration: underline;
   }
 }
