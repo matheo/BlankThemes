@@ -38,7 +38,7 @@
         <!-- end: #nav -->
 
         <!-- begin: #main -->
-        <div id="main">
+        <div id="main" class="floatbox">
             <!-- begin: #col1 main column -->
             <div id="col1">
                 <div id="col1_content" class="clearfix">
