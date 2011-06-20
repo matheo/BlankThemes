@@ -1,4 +1,4 @@
 
 # TODO
 
-* Include the efa-fontResizer license
+* Port the post and comments CSS
