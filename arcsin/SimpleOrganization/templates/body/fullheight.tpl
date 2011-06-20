@@ -75,15 +75,18 @@
             </div>
             <!-- end: #col1 -->
 
-            <!-- begin: #col2 second column -->
+            {if $layout|checklayout:2}
+            <!-- begin: #col2 column -->
             <div id="col2">
                 <div id="col2_content" class="clearfix">
                     {blockposition name='left'}
                 </div>
             </div>
             <!-- end: #col2 -->
+            {/if}
 
-            <!-- begin: #col3 third column -->
+            {if $layout|checklayout:3}
+            <!-- begin: #col3 column -->
             <div id="col3">
                 <div id="col3_content" class="clearfix">
                     {*blockposition name='search'*}
@@ -91,6 +94,7 @@
                 </div>
             </div>
             <!-- end: #col3 -->
+            {/if}
         </div>
         <!-- end: #main -->
     </div>

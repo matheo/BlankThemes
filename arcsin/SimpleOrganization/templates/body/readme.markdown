@@ -44,9 +44,9 @@ Uses the YAML subtemplates like the flexible grids example to build the layout
 
 ## fullheight
 
-A 3col derivation using some additional styles to have a full height layout
+A 2col derivation using some additional styles to have a full height layout
 
-* As 3col, supports the '2cb' and 'cb' zones
+* Supports the '2cb' and 'cb' zones
 
 
 All of them also supports the additional zone 'nc' (no-center) to disable the [center] blocks
