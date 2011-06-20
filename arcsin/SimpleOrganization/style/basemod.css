@@ -94,7 +94,7 @@
   #skiplinks a.skip:focus,
   #skiplinks a.skip:active {
     background: #333;
-    border-bottom: 1px #000 solid;
+    border-bottom: 1px solid #000;
     color: #fff;
     padding: 10px 0;
     text-decoration: none;
@@ -339,7 +339,7 @@
   /* cool subcolumns style */
   .coolsubcol {
     background: #f9f9f9;
-    border-top: 2px #efefef solid;
+    border-top: 2px solid #efefef;
     color: #666;
     padding-top: 15px;
   }
@@ -637,7 +637,7 @@
     /* move #footer to its position */
     margin: -70px auto 0;
 
-    background: #FFFFFF;
+    background: #fff;
     border: 0 none;
     padding: 0;
   }
@@ -713,18 +713,18 @@
     padding-left: 10px;
   }
   .z-block-title-blue {
-    border-left-color: #55AADA;
+    border-left-color: #55aada;
   }
   .z-block-title-green {
-    border-left-color: #B7D897;
+    border-left-color: #b7d897;
   }
   .z-block-title-orange {
-    border-left-color: #FA8F6F;
+    border-left-color: #fa8f6f;
   }
 
   /* Second header */
   #z-maincontent h2 {
-    border-left: 4px solid #55AADA;
+    border-left: 4px solid #55aada;
     margin-bottom: 0.4em;
     padding-left: 8px;
   }
@@ -737,7 +737,7 @@
   .bt-section-title {
     background-color: #f9f9f9;
     border-top: 2px solid #ddd;
-    color: #7A7A7A;
+    color: #7a7a7a;
     font: bold 1.2em sans-serif;
     margin-bottom: 16px;
     padding: 7px 10px 6px;
