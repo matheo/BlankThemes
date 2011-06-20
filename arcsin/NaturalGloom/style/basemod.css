@@ -87,14 +87,14 @@
 
   /* marginal area */
   body {
-    background: #797E84 url('../images/design/bg_body.jpg');
+    background: #797e84 url('../images/design/bg_body.jpg');
   }
 
   /* skiplinks */
   #skiplinks a.skip:focus,
   #skiplinks a.skip:active {
     background: #333;
-    border-bottom: 1px #000 solid;
+    border-bottom: 1px solid #000;
     color: #fff;
     padding: 10px 0;
     text-decoration: none;
@@ -122,7 +122,7 @@
   /* page wrapper */
   .page {
     background: #fff;
-    border: 6px #fff solid;
+    border: 6px solid #fff;
   }
 
       /* header */
@@ -159,7 +159,7 @@
 
       /* content wrapper */
       #main {
-        border-bottom: 1px solid #C3C4C1;
+        border-bottom: 1px solid #c3c4c1;
         margin-bottom: 3px;
       }
         #main_inner {
@@ -246,7 +246,7 @@
 
   /* navigation bar */
   #nav {
-    background: #6E7D85 url('../images/design/bg_navigation.gif') repeat-x;
+    background: #6e7d85 url('../images/design/bg_navigation.gif') repeat-x;
     margin-bottom: 3px;
     padding-top: 4px;
   }
@@ -270,7 +270,7 @@
 
   #nav ul li {
     border: none;
-    border-right: 1px solid #54646C;
+    border-right: 1px solid #54646c;
     display: inline;
     float: left;
     list-style-type: none;
@@ -281,7 +281,7 @@
   #nav ul li a,
   #nav ul li strong {
     background: transparent;
-    color: #E0E6EA;
+    color: #e0e6ea;
     display: block;
     font-size: 14px;
     font-weight: bold;
@@ -304,7 +304,7 @@
   #nav ul li a:focus,
   #nav ul li a:hover,
   #nav ul li a:active {
-    background: #5E6D75;
+    background: #5e6d75;
     border: none;
     color: #F0F6FA;
     text-decoration: none;
@@ -316,7 +316,7 @@
     }
 
   #nav_main ul li.current {
-    background: #6E7D85;
+    background: #6e7d85;
     border: none; /* to-remove */
   }
     #nav_main ul li.current a span.bt_desc {
@@ -334,11 +334,11 @@
   }
 
   #nav_sub {
-    border-top: 1px solid #555A5F;
-    background: #60656A;
+    border-top: 1px solid #555a5f;
+    background: #60656a;
   }
   #nav #nav_sub ul li {
-    border-right: 1px solid #50555A;
+    border-right: 1px solid #50555a;
   }
   #nav #nav_sub ul li a {
     font-size: 12px;
@@ -347,7 +347,7 @@
     padding: 0 12px;
   }
   #nav #nav_sub ul li a:hover {
-    background: #555A5F;
+    background: #555a5f;
   }
 
 
@@ -365,8 +365,8 @@
 
   /* cool subcolumns style */
   .coolsubcol {
-    background: #C9CDCF url('../images/design/bg_dashboard.gif') repeat-x;
-    border: 1px solid #ACAFB0;
+    background: #c9cdcf url('../images/design/bg_dashboard.gif') repeat-x;
+    border: 1px solid #acafb0;
     color: #404448;
     margin-bottom: 3px;
     padding: 15px;
@@ -375,8 +375,8 @@
     padding: 0 0 0 10px;
   }
   .coolsubcol .subc {
-    border-left: 1px solid #B0B4B8;
-    border-right: 1px solid #B0B4B8;
+    border-left: 1px solid #b0b4b8;
+    border-right: 1px solid #b0b4b8;
     padding: 0 5px 0 5px;
   }
   .coolsubcol .subcr {

@@ -193,7 +193,7 @@
     color: #fff;
     background: transparent;
     border: 0;
-    border-bottom: 1px #eee solid;
+    border-bottom: 1px solid #eee;
     margin: 0 0 0.5em 0;
     padding: 0 0 0.5em 0;
   }
@@ -213,7 +213,7 @@
 
   p.icaption_left img,
   p.icaption_right img {
-    border: 1px #888 solid;
+    border: 1px solid #888;
     padding: 0;
   }
 
@@ -236,7 +236,7 @@
   }
 
   fieldset {
-    border: 1px solid #D9DAD5;
+    border: 1px solid #d9dad5;
     padding: 5px 10px 10px;
   }
 
@@ -287,7 +287,7 @@
 
   /* title link */
   #header h1 a {
-    color: #A0C3D0;
+    color: #a0c3d0;
     text-decoration: none;
   }
 
@@ -326,7 +326,7 @@
    */
 
   #header h1 {
-    color: #A0C3D0;
+    color: #a0c3d0;
     font-size: 36px;
     letter-spacing: -1px;
     line-height: 65%;
@@ -400,10 +400,10 @@
   }
 
   table tr.z-odd {
-    background: #F2F6FA;
+    background: #f2f6fa;
   }
   thead th {
-    background: #C3D9FF;
+    background: #c3d9ff;
     color: #000;
   }
   tbody th {
@@ -476,7 +476,7 @@
   div.info {
     background: #e6e6ff;
     border-color: #9bb8d9;
-    color: #27427D;
+    color: #27427d;
   }
   div.notice {
     background: #fff6bf;
@@ -491,7 +491,7 @@
   div.error {
     background: #fbe3e4;
     border-color: #fbc2c4;
-    color: #8A1F11;
+    color: #8a1f11;
   }
 
   .text_left {
@@ -520,12 +520,12 @@
   }
 
   .content_separator {
-    border-bottom: 1px solid #DDDDDD;
+    border-bottom: 1px solid #ddd;
     display: block;
     margin: 22px 0 18px;
   }
   .text_separator {
-    color: #BBBBBB;
+    color: #bbb;
     padding: 0 2px;
   }
 
@@ -602,7 +602,7 @@
 
   /* Scribite */
   #main .htmlarea {
-    border: 1px solid #DDDDDD;
+    border: 1px solid #ddd;
   }
   /* openwysiwyg fix*/
   .tableTextareaEditor th,
@@ -645,9 +645,9 @@
   }
   #col2 .z-block .z-block-title,
   #col3 .z-block .z-block-title {
-    background: #D2D5D8;
-    border-bottom: 1px solid #C6C9CB;
-    color: #70767A;
+    background: #d2d5d8;
+    border-bottom: 1px solid #c6c9cb;
+    color: #70767a;
     font: bold 1.3em sans-serif;
   }
   .coolsubcol .z-block .z-block-title {
@@ -681,7 +681,7 @@
     line-height: 1.5em;
   }
   .news_categories {
-    border-top: 1px solid #EFEFEF;
+    border-top: 1px solid #efefef;
     margin-top: 1em; /* optional */
     text-align: right;
   }
@@ -705,7 +705,7 @@
   #col3 .z-block ul.navlist li,
   #col2 .z-block ul.menutree li,
   #col3 .z-block ul.menutree li {
-    border-bottom: 1px solid #BABEBF;
+    border-bottom: 1px solid #babebf;
     list-style: none;
     margin: 0;
     padding: 5px 0;
