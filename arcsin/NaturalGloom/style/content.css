@@ -455,8 +455,29 @@
   .highlight {
     color: #c30;
   }
-  .dimmed {
+  .dimmed,
+  .dimmed a {
     color: #888;
+  }
+
+  .small {
+    font-size: 0.9em;
+  }
+  .smaller {
+    font-size: 0.8em;
+  }
+  .smallest {
+    font-size: 0.7em;
+  }
+
+  .large {
+    font-size: 1.15em;
+  }
+  .larger {
+    font-size: 1.25em;
+  }
+  .largest {
+    font-size: 1.35em;
   }
 
   div.note,
