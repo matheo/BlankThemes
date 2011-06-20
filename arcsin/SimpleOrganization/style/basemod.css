@@ -246,6 +246,7 @@
   #nav_sub ul li a,
   #nav_main ul li a {
     background: transparent;
+    border-bottom: 2px solid #fff;
     color: #888;
     display: block;
     font-size: 22px;
@@ -726,6 +727,13 @@
   }
   .z-block-title-orange {
     border-left-color: #FA8F6F;
+  }
+
+  /* Second header */
+  #z-maincontent h2 {
+    border-left: 4px solid #55AADA;
+    margin-bottom: 0.3em;
+    padding-left: 10px;
   }
 
 
