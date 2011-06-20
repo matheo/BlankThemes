@@ -48,11 +48,5 @@ A 3col derivation using some additional styles to have a full height layout
 
 * As 3col, supports the '2cb' and 'cb' zones
 
-## fullwidth
-
-A 2col derivation changing the HTML structure of the template to get a full width layout
-
-* As 2col, supports the '2cb' zone only
-
 
 All of them also supports the additional zone 'nc' (no-center) to disable the [center] blocks

@@ -17,7 +17,6 @@ no__('2 columns');
 no__('3 columns');
 no__('3 columns static');
 no__('grid');
-no__('full width');
 no__('full height');
 
 no__('Master layout');
