@@ -54,34 +54,37 @@
   /* base layout gets standard */
   body {
     color: #444;
-    font-family: Verdana, Arial, sans-serif;
+    font-family: /*Verdana, Arial,*/ sans-serif;
     font-size: 75.00%; /* font size 12px */
   }
 
   h1, h2, h3, h4, h5, h6 {
-    color: #222;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #444;
+    /*font-family: Georgia, 'Times New Roman', Times, serif;*/
     font-weight: normal;
     margin: 0 0 0.25em 0;
   }
+  h4, h5, h6 {
+    font-weight: bold;
+  }
 
   h1 {
-    font-size: 250%; /* 30px */
+    font-size: 2.6em;
   }
   h2 {
-    font-size: 200%; /* 24px */
+    font-size: 2em;
   }
   h3 {
-    font-size: 166.66%; /* 20px */
+    font-size: 1.5em;
   }
   h4 {
-    font-size: 150%; /* 18px */
+    font-size: 1.25em;
   }
   h5 {
-    font-size: 133.33%; /* 16px */
+    font-size: 1.1em;
   }
   h6 {
-    font-size: 116.67%; /* 14px */
+    font-size: 1em;
     font-style: italic;
   }
 
@@ -135,6 +138,9 @@
     color: #666;
     margin: 0 0 1em 1.6em;
   }
+  del {
+    color: #666;
+  }
 
   strong, b {
     font-weight: bold;
@@ -154,6 +160,10 @@
   pre, code {
     color: #800;
   }
+  pre, code, tt {
+    font-family: monospace;
+    line-height: 1.5;
+  }
   kbd, samp, var {
     color: #666;
     font-weight: bold;
@@ -163,7 +173,7 @@
   }
 
   acronym, abbr {
-    border-bottom: 1px dotted #aaa;
+    border-bottom: 1px dotted #666;
     cursor: help;
     font-variant: small-caps;
     letter-spacing: .07em;
@@ -241,7 +251,7 @@
   /* general links */
   a {
     background: transparent;
-    color: #4D87C7;
+    color: #456;
     text-decoration: none;
   }
   a:visited {
@@ -255,7 +265,7 @@
   a:active {
     /* if you use backgrounds or borders here
        you will interfere zikula core styles */
-    color: #182E7A;
+    color: #039;
     outline: 0 none;
     text-decoration: underline;
   }
@@ -285,19 +295,27 @@
   /* footer links */
   #footer a {
     background: transparent;
-    color: #999;
-    font-weight: bold;
+    font-weight: normal;
   }
   #footer a:focus,
   #footer a:hover,
   #footer a:active {
     background: transparent;
-    color: #4D87C7;
+    color: #000;
     text-decoration: underline;
   }
     #footer_sublinks a {
       font-weight: normal;
     }
+
+  /* "read more" link */
+  a.more {
+    color: #579;
+    font-weight: bold;
+  }
+  a.more:hover {
+    color: #234;
+  }
 
 
 
@@ -328,11 +346,13 @@
     }
 
   #footer {
-    color: #666;
-    font-size: 12px;
+    color: #777;
+    font-size: 1.15em;
     line-height: 150%;
-    text-align: left;
   }
+    #footer .c50r {
+      text-align: right;
+    }
     #footer #footer_sublinks {
       font-size: 0.8em;
     }
@@ -371,18 +391,32 @@
     /*width: auto;*/
   }
   table caption {
+    background: #eee;
     font-variant: small-caps;
   }
   table.full,
   table.z-datatable {
+    background: #f6f6f6;
+    border: 1px solid #ccb;
     width: 100%;
+  }
+  table.z-datatable tr.z-odd {
+    background: #fcfcfc;
   }
   table.fixed {
     table-layout: fixed;
   }
 
+  table tr.z-odd {
+    background: #f2f6fa;
+  }
   thead th {
-    color: #000;
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    color: #555;
+  }
+  table tr {
+    border-bottom: 1px solid #ddd;
   }
   tbody th {
     background: #e0e0e0;
@@ -433,8 +467,29 @@
   .highlight {
     color: #c30;
   }
-  .dimmed {
+  .dimmed,
+  .dimmed a {
     color: #888;
+  }
+
+  .small {
+    font-size: 0.9em;
+  }
+  .smaller {
+    font-size: 0.8em;
+  }
+  .smallest {
+    font-size: 0.7em;
+  }
+
+  .large {
+    font-size: 1.15em;
+  }
+  .larger {
+    font-size: 1.25em;
+  }
+  .largest {
+    font-size: 1.35em;
   }
 
   div.note,
@@ -523,6 +578,40 @@
   }
   .fontresize-small {
     background: url(../images/icons/font_resize.gif) no-repeat -40px 50%;
+  }
+
+  /* special lists */
+  ul.plain-list {
+    margin: 0;
+  }
+  ul.nice-list {
+    margin-left: 0;
+  }
+  ul.tabbed {
+    display: inline;
+    margin: 0;
+  }
+
+  ul.plain-list li,
+  ul.nice-list li,
+  ul.tabbed li {
+    list-style: none;
+    margin-top: 0;
+  }
+
+  ul.nice-list li {
+    border-top: 1px solid #EEE;
+    list-style: none;
+    padding: 4px 0;
+  }
+  ul.nice-list li:first-child {
+    border-top: none;
+  }
+  ul.nice-list li .z-floatright {
+    color: #999;
+  }
+  ul.tabbed li {
+    float: left;
   }
 
   /* Special styles for entries or menus ... */

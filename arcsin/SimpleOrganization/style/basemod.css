@@ -87,8 +87,7 @@
 
   /* marginal area */
   body {
-    background: #4d87c7 url(../images/design/bg_blue.gif) repeat-x top left fixed;
-    padding: 10px 0; /* to-remove */
+    background: #fff;
   }
 
   /* skiplinks */
@@ -112,14 +111,14 @@
 
   /* page wrapper */
   .page {
-    background: #fff;
-    border: 10px solid #fff; /* to-remove : add the 20px to the fixed-width columns */
+    padding: 0 10px;
   }
 
       /* header */
       #header {
-        height: 110px;
-        padding: 0 20px; /* do not use top/bottom paddings with fixed height */
+        border-bottom: 1px solid #ddd;
+        /*height: 110px;*/
+        padding: 20px 0; /* do not use top/bottom paddings with fixed height */
         position: relative;
         /*z-index: 100;*/ /* when the navigation is placed inside the header and a multi level menu is used this is needed for ie */
       }
@@ -133,32 +132,38 @@
           }
 
           /* title and slogan */
-          #header h1 {
-            padding: 37px 0 0 0;
-          }
+          #header h1,
           #header .slogan {
-            float: left;
+            display: none;
           }
 
           /* logo */
           #header .logo {
+            border-right: 1px solid #ddd;
             float: left;
-            margin: 30px 12px 0 0;
+            margin: 0 40px 0 0;
+            padding: 10px 40px 10px 0;
           }
+
+      /* navigation wrapper */
+      #nav_main {
+        bottom: 20px;
+        position: absolute;
+      }
 
       /* content wrapper */
       #main {
-        padding: 1em 0;
+        padding: 24px 0;
       }
 
       /* footer */
       #footer {
-        background: #efefef;
-        border-top: 5px #dfdfdf solid; /* to-remove */
-        padding: 12px 15px;
+        border-top: 1px solid #ddd;
+        padding: 12px 5px;
       }
-        #footer #footer_sublinks {
-          margin: 0.4em 0 0;
+        #footer p {
+          line-height: 24px;
+          margin: 0;
         }
 
 
@@ -204,14 +209,13 @@
 
   /* navigation bar */
   #nav_main {
-    background: #ccc url(../yaml/navigation/images/shiny_buttons/background.png) repeat-x; /* to-remove */
     border: none;
     display: inline;
     float: left;
     overflow: visible;
-    width: 100%;
   }
 
+  #nav_sub ul,
   #nav_main ul {
     border: none;
     display: inline;
@@ -221,9 +225,9 @@
     padding: 0;
   }
 
+  #nav_sub ul li,
   #nav_main ul li {
     border: none;
-    border-right: 1px solid #aaa; /* to-remove */
     display: inline;
     float: left;
     list-style-type: none;
@@ -231,21 +235,29 @@
     padding: 0;
   }
 
-  #nav_main ul li a,
-  #nav_main ul li strong {
+  #nav_sub ul li:first-child a,
+  #nav_main ul li:first-child a {
+    margin-left: 0;
+  }
+  #nav_sub ul li:last-child a,
+  #nav_main ul li:last-child a {
+    margin-right: 0;
+  }
+  #nav_sub ul li a,
+  #nav_main ul li a {
     background: transparent;
-    color: #333;
+    color: #888;
     display: block;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 22px;
+    font-weight: normal;
     line-height: 30px;
-    margin: 0;
-    padding: 0 16px;
+    margin: 0 1em;
+    padding: 0 0 2px;
     text-decoration: none;
     width: auto;
   }
     #nav_main ul li a span.bt_desc {
-      color: #777;
+      color: #999;
       display: block;
       font-size: 11px;
       font-weight: normal;
@@ -257,9 +269,9 @@
   #nav_main ul li a:focus,
   #nav_main ul li a:hover,
   #nav_main ul li a:active {
-    background: #3b69ad;
     border: none;
-    color: #fff;
+    border-bottom: 2px solid #fa8f6f;
+    color: #002;
     text-decoration: none;
   }
     #nav_main ul li a:focus span.bt_desc,
@@ -269,20 +281,38 @@
     }
 
   #nav_main ul li.current {
-    background: #4d87c7;
-    border: none; /* to-remove */
   }
     #nav_main ul li.current a span.bt_desc {
       color: #ccc;
     }
 
-  #nav_main ul li.current strong,
   #nav_main ul li.current a,
   #nav_main ul li.current a:focus,
   #nav_main ul li.current a:hover,
   #nav_main ul li.current a:active {
     background: transparent;
-    color: #fff;
+    border-bottom: 2px solid #94cc5f;
+    color: #222;
+  }
+
+  #nav {
+    border-bottom: 1px solid #ddd;
+    padding: 12px 0;
+  }
+  #nav_sub {
+    padding: 0 5px;
+  }
+  #nav_sub ul li a {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    padding: 0;
+    text-decoration: none;
+  }
+  #nav_sub ul li.current a,
+  #nav_sub ul li.current a:focus,
+  #nav_sub ul li.current a:hover,
+  #nav_sub ul li.current a:active {
+    color: #222;
     font-weight: bold;
   }
 
@@ -648,7 +678,7 @@
 
   /* Zikula Blocks */
   .z-block {
-    margin-bottom: 15px;
+    margin-bottom: 24px;
   }
   .z-block .z-block-title {
     margin: 0;
@@ -673,5 +703,45 @@
   .z-blockposition-header,
   .z-blockposition-footer {
     float: right;
+  }
+  .z-block-title-blue,
+  .z-block-title-green,
+  .z-block-title-orange {
+    border-left-style: solid;
+    border-left-width: 4px;
+    margin-bottom: 0.2em;
+    padding-left: 10px;
+  }
+  .z-block-title-blue {
+    border-left-color: #55AADA;
+  }
+  .z-block-title-green {
+    border-left-color: #B7D897;
+  }
+  .z-block-title-orange {
+    border-left-color: #FA8F6F;
+  }
+
+
+  /* Theme Sections */
+  .bt-section {
+    margin-bottom: 24px;
+  }
+  .bt-section-title {
+    background-color: #f9f9f9;
+    border-top: 2px solid #ddd;
+    color: #7A7A7A;
+    font: bold 1.2em sans-serif;
+    margin-bottom: 16px;
+    padding: 7px 10px 6px;
+  }
+  .bt-sidesection-title {
+    margin-bottom: 8px;
+  }
+
+
+  /* Theme Zones */
+  #bt_3t {
+    padding-top: 30px;
   }
 }

@@ -28,7 +28,7 @@
  */
 function smarty_function_bt_userlinks($params, Zikula_View_Theme &$view)
 {
-    $id = isset($params['id']) ? $params['id'] : 'nav_main';
+    $id = isset($params['id']) ? $params['id'] : null;
 
     $currentclass = isset($params['currentclass']) ? $params['currentclass'] : 'current';
 
@@ -133,11 +133,11 @@ function smarty_function_bt_userlinks($params, Zikula_View_Theme &$view)
     }
 
     // Render the menu as an unordered list in a div
-    $output  = '<div id="'.$id.'"><ul>';
+    $output  = $id ? '<div id="'.$id.'" class="floatbox"><div id="'.$id.'_sub"><ul>' : '<ul>';
     foreach ($menu as $option) {
         $output .= bt_userlinks_drawmenu($option, $current, $currentclass, $span, $desc);
     }
-    $output .= '</ul></div>';
+    $output .= $id ? '</ul></div></div>' : '</ul>';
 
     return $output;
 }
