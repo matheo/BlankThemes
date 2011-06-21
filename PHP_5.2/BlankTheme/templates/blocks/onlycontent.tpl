@@ -1,0 +1,3 @@
+
+<!-- OnlyContent Block -->
+{$content}
