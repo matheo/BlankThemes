@@ -659,15 +659,18 @@
     margin: 0 15px 0 0;
     padding: 0 15px 0 0;
   }
-    .bt_grid .bt_123 #col2_content,
-    .bt_grid .bt_132 #col3_content {
-      border-right: 1px solid #ddd;
-      padding: 0 15px 0 0;
-    }
-    .bt_grid .bt_123 #col3_content,
-    .bt_grid .bt_132 #col2_content {
-      padding: 0 0 0 15px;
-    }
+
+
+  /* col_content paddings */
+  .bt_grid .bt_123 #col2_content,
+  .bt_grid .bt_132 #col3_content {
+    border-right: 1px solid #ddd;
+    padding: 0 15px 0 0;
+  }
+  .bt_grid .bt_123 #col3_content,
+  .bt_grid .bt_132 #col2_content {
+    padding: 0 0 0 15px;
+  }
 
 
 

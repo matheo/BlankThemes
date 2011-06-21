@@ -185,7 +185,7 @@
   }
   sup {
     font-size: smaller;
-    vertical-align: sup;
+    vertical-align: super;
   }
 
   hr {
@@ -582,42 +582,40 @@
   }
 
   /* special lists */
-  ul.plain-list {
-    margin: 0;
-  }
-  ul.nice-list,
-  .nice-list ul {
-    margin-left: 0;
-  }
+  ul.plain-list,
   ul.tabbed {
     display: inline;
     margin: 0;
   }
+  ul.nice-list,
+  .bt-menublock ul {
+    margin: 0;
+  }
 
-  ul.plain-list li,
-  ul.nice-list li,
-  .nice-list ul li,
   ul.tabbed li {
+    float: left;
+  }
+  ul.plain-list li,
+  ul.tabbed li,
+  ul.nice-list li,
+  .bt-menublock ul li {
     list-style: none;
     margin: 0;
   }
 
   ul.nice-list li,
-  .nice-list ul li {
+  .bt-menublock ul li {
     border-top: 1px solid #eee;
     list-style: none;
     padding: 4px 0;
   }
   ul.nice-list li:first-child,
-  .nice-list ul li:first-child {
+  .bt-menublock ul li:first-child {
     border-top: none;
   }
   ul.nice-list li .z-floatright,
-  .nice-list ul li .z-floatright {
+  .bt-menublock ul li .z-floatright {
     color: #999;
-  }
-  ul.tabbed li {
-    float: left;
   }
 
   /* Special styles for entries or comments ... */

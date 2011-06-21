@@ -59,7 +59,9 @@ function smarty_function_bt_usersublinks($params, Zikula_View_Theme &$view)
 
     // Render the submenu as an unordered list in a div
     $output = '';
+
     if (isset($menu[$current])) {
+        // this output diverges of the BT plugin as it needs the #nav container
         $output .= '<div id="'.$id.'" class="floatbox"><div id="'.$id.'_sub"><ul>';
         foreach ($menu[$current] as $option) {
             $output .= bt_usersublinks_drawmenu($option, $currentsub, $currentclass, $span);

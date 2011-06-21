@@ -5,6 +5,6 @@
     <span>{$title}</span>
 </h4>
 {/if}
-<div class="z-block-content nice-list">
+<div class="z-block-content bt-menublock">
     {$content}
 </div>
