@@ -16,13 +16,32 @@ body.bt_admin {
 }
 
 .bt_admin #header {
+  border: none;
   height: 70px;
+  padding: 0;
+}
+.bt_admin #header h1,
+.bt_admin #header .slogan {
+  display: block;
 }
 .bt_admin #header h1 {
   padding: 10px 0 0;
 }
 .bt_admin #header .logo {
+  border: none;
   margin: 10px 5px 0 0;
+  padding: 0;
+}
+
+.bt_admin #nav {
+  border: none;
+  padding: 0;
+}
+
+.bt_admin #z-maincontent h2 {
+  border-left: none;
+  margin-bottom: 0.25em;
+  padding-left: 0;
 }
 
 .bt_admin.bt_2col .bt_12 #col1 {
