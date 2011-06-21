@@ -370,7 +370,7 @@
   /* #col1 is the main column */
   .bt_2col #col1 {
     float: right;
-    width: 75%;
+    width: 70%;
   }
 
   /* #col2 and #col3 contains side blocks */
@@ -389,7 +389,7 @@
   .bt_2col .bt_12 #col2,
   .bt_2col .bt_13 #col3 {
     border-left: 1px solid #ddd;
-    margin-left: 75%;
+    margin-left: 70%;
     margin-right: 0;
   }
 
@@ -403,7 +403,7 @@
   .bt_2col .bt_31 #col3 {
     border-right: 1px solid #ddd;
     margin-left: 0;
-    margin-right: 75%;
+    margin-right: 70%;
   }
 
 
