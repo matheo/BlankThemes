@@ -22,13 +22,11 @@
             <span class="slogan">{$modvars.ZConfig.slogan}</span>
 
             <!-- begin: #nav_main -->
-            <div id="nav_main">
-                {if $btconfig.topnav eq 1}
-                    {blockposition name='topnav'}
-                {else}
-                    {bt_userlinks}
-                {/if}
-            </div>
+            {if $btconfig.topnav eq 1}
+                <div id="nav_main">{blockposition name='topnav'}</div>
+            {else}
+                {bt_userlinks}
+            {/if}
             <!-- end: #nav_main -->
         </div>
         <!-- end: #header -->
