@@ -18,7 +18,7 @@ body.bt_admin {
 .bt_admin #header {
   border: none;
   height: 70px;
-  padding: 0;
+  padding: 10px 20px 0;
 }
 .bt_admin #header h1,
 .bt_admin #header .slogan {
