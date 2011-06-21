@@ -31,6 +31,7 @@
                 {blockposition name='topnav'}
             {else}
                 {bt_userlinks}
+                {bt_usersublinks}
             {/if}
         </div>
         <!-- end: #nav -->
