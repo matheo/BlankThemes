@@ -8,11 +8,11 @@
 {bt_htmloutput section='footer'}
 
 {* default styles of footer block is float: right *}
-{if $btconfig.footer eq 1}
+{if $btconfig_footer eq 1}
     {blockposition name='footer'}
 {/if}
 
-{if $btconfig.bottomnav eq 1}
+{if $btconfig_bottomnav eq 1}
     {blockposition name='bottomnav'}
 {else}
     <a href="{modurl modname='News' type='user' func='view' theme='RSS'}" title="RSS"><img src="{$imagepath}/icons/rss.png" alt="RSS" width="14" height="14" /> RSS</a>

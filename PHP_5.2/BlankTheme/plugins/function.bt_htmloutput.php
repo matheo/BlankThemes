@@ -34,8 +34,6 @@ function smarty_function_bt_htmloutput($params, Zikula_View_Theme &$view)
     // blanktheme vars
     $body      = $view->getTplVar('body');
     $layout    = $view->getTplVar('layout');
-    $btconfig  = $view->getTplVar('btconfig');
-    $btcssbody = $view->getTplVar('btcssbody');
 
     // check for the current variable
     if ($view->getTplVar('current')) {
@@ -90,7 +88,7 @@ function smarty_function_bt_htmloutput($params, Zikula_View_Theme &$view)
             break;
 
         case 'fontresize':
-            if ($btconfig['fontresize'] != 'y') {
+            if ($view->getTplVar('btconfig_fontresize') != '1') {
                 break;
             }
             // font resize based in the efa script
@@ -131,7 +129,7 @@ function smarty_function_bt_htmloutput($params, Zikula_View_Theme &$view)
         case 'footer':
             // load the Theme styles in the very end of the page rendering
             // TODO pending review with PageUtil weight assignment (when implemented)
-            if ($btconfig['optimize'] == 'y') {
+            if ($view->getTplVar('btconfig_optimize') == '1') {
                 // do not load the layout_* stylesheet and load the basic styles directly
                 PageUtil::addVar('stylesheet', $view->getThemepath().'/yaml/core/slim_base.css');
                 PageUtil::addVar('stylesheet', $view->getStylepath().'/basemod.css');
@@ -161,8 +159,8 @@ function smarty_function_bt_htmloutput($params, Zikula_View_Theme &$view)
             if (!empty($current)) {
                 $output .= 'bt_'.$current.' ';
             }
-            if ($btcssbody && isset($btcssbody[$body]) && $btcssbody[$body]) {
-                $output .= $btcssbody[$body].' ';
+            if ($view->getTplVar('btcssbody_'.$body)) {
+                $output .= $view->getTplVar('btcssbody_'.$body).' ';
             }
             $output .= 'bt_'.$body.' bt_type_'.$view->getType().' bt_lang_'.$view->getLanguage();
             break;

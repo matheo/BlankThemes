@@ -14,7 +14,7 @@
                 {bt_htmloutput section='topnavlinks'}
                 {bt_htmloutput section='fontresize'}
             </div>
-            {if $btconfig.header eq 1}
+            {if $btconfig_header eq 1}
                 {blockposition name='header'}
             {/if}
             <a href="{$baseurl}">{img src='logo.png' class='logo' __alt='logo'}</a>
@@ -25,7 +25,7 @@
 
         <!-- begin: #nav -->
         <div id="nav">
-            {if $btconfig.topnav eq 1}
+            {if $btconfig_topnav eq 1}
                 {blockposition name='topnav'}
             {else}
                 {bt_userlinks}
