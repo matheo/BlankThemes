@@ -22,9 +22,11 @@
  *  Global fixes (layout-global)
  *  Design of the layout (layout-basics)
  *     Layout Elements (layout-elements)
- *     Navigation menu adjustments (layout-navigation)
+ *     Skiplinks (layout-skiplinks)
+ *     Navigation (layout-navigation)
  *     Miscelaneous (layout-misc)
  *  Specific templates and zones (layout-templates)
+ *  Customized styles (layout-custom)
  */
 
 @media screen, projection
@@ -57,12 +59,14 @@
     text-align: left;
   }
 
+  /* BlankTheme zones */
   .bt_zone {
     clear: both;
     display: block;
     overflow: hidden;
   }
 
+  /* Backup for correct positioning */
   #header,
   #nav,
   #main,
@@ -88,16 +92,6 @@
   /* marginal area */
   body {
     background: #fff;
-  }
-
-  /* skiplinks */
-  #skiplinks a.skip:focus,
-  #skiplinks a.skip:active {
-    background: #333;
-    border-bottom: 1px solid #000;
-    color: #fff;
-    padding: 10px 0;
-    text-decoration: none;
   }
 
   /* general wrapper */
@@ -168,6 +162,21 @@
 
 
   /**
+   * Visual styling for skiplink navigation
+   * @subsection layout-skiplinks
+   */
+
+  #skiplinks a.skip:focus,
+  #skiplinks a.skip:active {
+    background: #333;
+    border-bottom: 1px solid #000;
+    color: #fff;
+    padding: 10px 0;
+    text-decoration: none;
+  }
+
+
+  /**
    * Navigation menu adjustments
    * @subsection layout-navigation
    */
@@ -205,7 +214,6 @@
     text-align: center;
     text-decoration: none;
   }
-
 
   /* navigation bar */
   #nav_main {
@@ -675,8 +683,10 @@
 
 
   /**
-   * Miscelaneous styles
-   * @subsection basemod-misc
+   * Customized styles
+   * Special layout elements of this website
+   *
+   * @section layout-custom
    */
 
   /* Zikula Blocks */
@@ -732,7 +742,6 @@
     padding-left: 8px;
   }
 
-
   /* Theme Sections */
   .bt-section {
     margin-bottom: 24px;
@@ -748,7 +757,6 @@
   .bt-sidesection-title {
     margin-bottom: 8px;
   }
-
 
   /* Theme Zones */
   #bt_3t {
