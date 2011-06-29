@@ -62,8 +62,6 @@
   /* BlankTheme zones */
   .bt_zone {
     clear: both;
-    display: block;
-    overflow: hidden;
   }
 
   /* Backup for correct positioning */
@@ -672,12 +670,11 @@
   /* col_content paddings */
   .bt_grid .bt_123 #col2_content,
   .bt_grid .bt_132 #col3_content {
-    border-right: 1px solid #ddd;
-    padding: 0 15px 0 0;
+    padding: 0 10px 0 0;
   }
   .bt_grid .bt_123 #col3_content,
   .bt_grid .bt_132 #col2_content {
-    padding: 0 0 0 15px;
+    padding: 0 0 0 10px;
   }
 
 
@@ -748,11 +745,11 @@
   }
   .bt-section-title {
     background-color: #f9f9f9;
-    border-top: 2px solid #ddd;
+    border-top: 2px solid #e3e3e3;
     color: #7a7a7a;
     font: bold 1.2em sans-serif;
     margin-bottom: 16px;
-    padding: 7px 10px 6px;
+    padding: 7px 10px 6px !important;
   }
   .bt-sidesection-title {
     margin-bottom: 8px;
