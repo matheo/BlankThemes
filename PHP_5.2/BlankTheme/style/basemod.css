@@ -59,8 +59,6 @@
 
   .bt_zone {
     clear: both;
-    display: block;
-    overflow: hidden;
   }
 
   #header,
